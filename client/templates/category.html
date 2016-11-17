@@ -1,0 +1,33 @@
+
+
+<div class="panel panel-flat">
+
+    <div class="table-responsive">
+        <table class="listing table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Date Added</th>
+                    <th>Last Modified</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat = "category in categories">
+                    <td>{{ category.sno }}</td>
+                    <td>{{ category.name }}</td>
+                    <td>{{ category.created }}</td>
+                    <td>{{ category.modified }}</td>
+                    <td>{{ category.status }}</td>
+                    <td><ui class="icons-list"><li><a href="javascript:void(0);" ng-click="showEditWindow(category.id)" title="Edit category" ><i class="icon-pencil5"></i></a></li></ul></td>
+
+                 </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div><!-- /.content -->
+
